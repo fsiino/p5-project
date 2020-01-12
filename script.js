@@ -60,10 +60,10 @@ undo.addEventListener('click', () => {
 });
 
 addEventListener('keydown', e => {
-  if (e.keyCode === 17) {
+  if (e.keyCode === 17 || e.metaKey) { // ctrl for windows, cmd for mac
     addEventListener('keydown', e => {
-      if (e.keyCode === 90) {
-        alert('Undo coming soon!')
+      if (e.keyCode === 90) { // z
+        alert('Ctrl/Cmd + Z coming soon!')
       }
     })
   }
