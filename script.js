@@ -2,6 +2,8 @@ const colorInput = document.getElementById('color');
 const weight = document.getElementById('weight');
 const clear = document.getElementById('clear');
 const save = document.getElementById('save');
+const open = document.getElementById('open');
+const undo = document.getElementById('undo');
 
 const paths = [];
 let currentPath = [];
@@ -46,5 +48,23 @@ clear.addEventListener('click', () => {
 });
 
 save.addEventListener('click', () => {
-    saveCanvas(canvas, 'drawing', 'jpg')
+  saveCanvas(canvas, 'drawing', 'jpg')
+});
+
+open.addEventListener('click', () => {
+  alert('Load image coming soon!')
+});
+
+undo.addEventListener('click', () => {
+  alert('Undo coming soon!')
+});
+
+addEventListener('keydown', e => {
+  if (e.keyCode === 17) {
+    addEventListener('keydown', e => {
+      if (e.keyCode === 90) {
+        alert('Undo coming soon!')
+      }
+    })
+  }
 });

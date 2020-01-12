@@ -7,9 +7,9 @@
 * Color palette
 * Stroke
 * Trash drawing
+* Save drawing to device
 
 #### Future
-* Save image to device
 * Add various other drawing tools
   * Eraser
   * Shapes
