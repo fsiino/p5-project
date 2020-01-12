@@ -13,6 +13,7 @@
 * Add various other drawing tools
   * Eraser
   * Shapes
+  * Undo
   * Color picker
   * etc.
 * Image import

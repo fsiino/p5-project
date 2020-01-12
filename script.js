@@ -1,11 +1,13 @@
 const colorInput = document.getElementById('color');
 const weight = document.getElementById('weight');
 const clear = document.getElementById('clear');
+const save = document.getElementById('save');
+
 const paths = [];
 let currentPath = [];
 
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight);
+  let canvas = createCanvas(window.innerWidth, window.innerHeight);
   background(255);
 }
 
@@ -41,4 +43,8 @@ function mousePressed() {
 clear.addEventListener('click', () => {
   paths.splice(0);
   background(255);
+});
+
+save.addEventListener('click', () => {
+    saveCanvas(canvas, 'drawing', 'jpg')
 });
